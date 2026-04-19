@@ -179,6 +179,29 @@ h1 {
     background-color: #27ae60;
 }
 
+/* Comments Section */
+.comments-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.comments-section hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 20px 0;
+}
+
+.comments-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#disqus_thread {
+    background-color: var(--input-bg);
+    padding: 15px;
+    border-radius: 10px;
+}
+
 /* 로또 볼 색상 */
 .color-1 { background-color: #fbc400; color: #fff; border-color: #fbc400; }
 .color-2 { background-color: #69c8f2; color: #fff; border-color: #69c8f2; }
