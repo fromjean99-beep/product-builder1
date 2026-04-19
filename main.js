@@ -1,6 +1,20 @@
 
 const generateBtn = document.getElementById('generate-btn');
 const lottoNumbersContainer = document.querySelector('.lotto-numbers');
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// 테마 초기화
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+}
+
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    const theme = body.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', theme);
+});
 
 generateBtn.addEventListener('click', () => {
     const numbers = generateLottoNumbers();
